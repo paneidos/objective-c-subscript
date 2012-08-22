@@ -8,8 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+#if __IPHONE_OS_VERSION_MAX_ALLOWED < 60000
+
 @interface NSDictionary (Subscript)
 
 -(id)objectForKeyedSubscript:(id)key;
 
 @end
+
+#endif

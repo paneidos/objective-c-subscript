@@ -8,6 +8,8 @@
 
 #import "NSDictionary+Subscript.h"
 
+#if __IPHONE_OS_VERSION_MAX_ALLOWED < 60000
+
 @implementation NSDictionary (Subscript)
 
 -(id)objectForKeyedSubscript:(id)key
@@ -16,3 +18,5 @@
 }
 
 @end
+
+#endif

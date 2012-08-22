@@ -8,8 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+#if __IPHONE_OS_VERSION_MAX_ALLOWED < 60000
+
 @interface NSMutableDictionary (Subscript)
 
 - (void)setObject:(id)object forKeyedSubscript:(id < NSCopying >)aKey;
 
 @end
+
+#endif
