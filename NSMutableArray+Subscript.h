@@ -8,8 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+#if __IPHONE_OS_VERSION_MAX_ALLOWED < 60000
+
 @interface NSMutableArray (Subscript)
 
 - (void)setObject:(id)anObject atIndexedSubscript:(NSUInteger)index;
 
 @end
+
+#endif

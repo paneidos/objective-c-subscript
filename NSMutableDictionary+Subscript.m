@@ -8,6 +8,8 @@
 
 #import "NSMutableDictionary+Subscript.h"
 
+#if __IPHONE_OS_VERSION_MAX_ALLOWED < 60000
+
 @implementation NSMutableDictionary (Subscript)
 
 - (void)setObject:(id)object forKeyedSubscript:(id < NSCopying >)aKey
@@ -16,3 +18,5 @@
 }
 
 @end
+
+#endif
