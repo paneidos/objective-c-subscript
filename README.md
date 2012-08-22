@@ -14,6 +14,8 @@ Copy the files into your project, and import the categories you need or import S
 
 All functions work according to the official documentation available on Apple's developer site.
 
+If you are using ARC, you only need the header files, the compiler will insert all the methods for you.
+
 Requirements
 ------------
 
