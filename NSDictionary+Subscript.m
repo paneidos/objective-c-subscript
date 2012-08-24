@@ -6,6 +6,8 @@
 //  Copyright (c) 2012 Sernin van de Krol. All rights reserved.
 //
 
+#if __has_feature(objc_arc)
+
 #import "NSDictionary+Subscript.h"
 
 @implementation NSDictionary (Subscript)
@@ -16,3 +18,5 @@
 }
 
 @end
+
+#endif
