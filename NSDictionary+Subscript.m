@@ -14,7 +14,7 @@
 
 -(id)objectForKeyedSubscript:(id)key
 {
-    return [self valueForKey:key];
+    return [self objectForKey:key];
 }
 
 @end
